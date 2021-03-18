@@ -32,7 +32,10 @@
         @foreach($posts as $post)
 
 
+
+
             <h3>{{ $post->title }}</h3>
+            <img src="{{ url("storage/{$post->image}") }}" alt="{{ $post->title }}" style="max-width: 400px">
             <p>
                 {{ $post->content }}
             </p>

@@ -13,4 +13,7 @@
 <div class="form-group">
     <textarea class="form-control" name="content" id="content" cols="30" rows="4" placeholder="Conteúdo">{{ $post->content ?? old('content')}}</textarea>
 </div>
+<div class="form-group">
+    <input type="file" class="form-control-file" name="image" id="image">
+</div>
 <button class="btn btn-primary" type="submit">Enviar</button>
